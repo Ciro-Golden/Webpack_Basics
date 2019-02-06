@@ -14,5 +14,11 @@ console.log("I'm a client!");
 console.log("Ralph's value:", ralphJpg);
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector("#ralph-in-pajamas").src = ralphJpg;
+  const main = document.createElement("main");
+  main.innerHTML = `
+    <h1>☃️ Webpack Demo</h1>
+    <img src="${ralphJpg}" />
+    `;
+
+  document.body.append(main);
 });
