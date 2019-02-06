@@ -14,5 +14,16 @@ module.exports = {
     // is path.join(__dirname, "dist")
     path: path.join(__dirname, "build"),
     filename: "[name].bundle.js"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif|webp|svg)$/,
+        loader: "file-loader",
+        options: {
+          outputPath: "images/"
+        }
+      }
+    ]
   }
 };
