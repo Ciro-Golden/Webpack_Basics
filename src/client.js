@@ -1,5 +1,6 @@
 import "./module-a";
 import ralphJpg from "./images/ralph.jpg";
+import "./styles/main.css";
 // Webpack will, by default, look for a entry file
 // at this location (i.e. /src/index.js)
 

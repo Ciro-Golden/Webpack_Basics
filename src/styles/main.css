@@ -1,0 +1,11 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+* {
+  font-family: inherit;
+}
+
+img {
+  border-radius: 20px;
+}
