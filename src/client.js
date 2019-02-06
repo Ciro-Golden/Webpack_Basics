@@ -7,4 +7,4 @@ import "./module-a";
 
 // You can tell webpack to auto-bundle your code with:
 // webpack --watch
-console.log("Hello, Multiverse!");
+console.log("I'm a client!");
