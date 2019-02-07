@@ -1,3 +1,6 @@
+import ReactDOM from "react-dom";
+import React from "react";
+import App from "./components/App";
 import "./module-a";
 import ralphJpg from "./images/ralph.jpg";
 import "./styles/main.css";
@@ -15,10 +18,12 @@ console.log("Ralph's value:", ralphJpg);
 
 document.addEventListener("DOMContentLoaded", () => {
   const main = document.createElement("main");
-  main.innerHTML = `
-    <h1>☃️ Webpack Demo</h1>
-    <img src="${ralphJpg}" />
-    `;
+  //   main.innerHTML = `
+  //     <h1>☃️ Webpack Demo</h1>
+  //     <img src="${ralphJpg}" />
+  //     `;
+
+  ReactDOM.render(<App />, main);
 
   document.body.append(main);
 });

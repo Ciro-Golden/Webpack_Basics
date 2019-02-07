@@ -35,6 +35,14 @@ module.exports = {
             loader: "css-loader"
           }
         ]
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        // Use "exclude" with a regular express to specify files that should be ignored
+        // by this loader. In this case, we ignore files that have "node_modules"
+        // in their path because babel should not process our installed packages.
+        loader: "babel-loader"
       }
     ]
   },
